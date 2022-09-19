@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 100%;
+
+}
+.card {
+    min-width: 600px;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 30%;
+    display: flex;
+    border-radius: 0 10px 10px 0;
+}
+.left
+{
+    width: 50%;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+.right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 35px 40px;
+}
+.item-category{
+    font-size: 16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+h1{
+    font-size: 36px;
+    font-family: Fraunces , sans-serif ;
+}
+.description {
+    
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.75;    
+}
+.prices{
+    display: flex;
+    align-items: center;
+    
+}
+.prices-updated{
+    font-size: 36px;
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces , sans-serif;
+}
+.prices-previous {
+    margin-left: 10px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+button {
+    width: 100%;
+    background-color:  hsl(158, 36%, 37%);
+    border-color: hsl(158, 36%, 37%);
+    border-radius: 7px;
+    padding: 17px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: none;
+    cursor: pointer;
+}
+button > img {
+    margin-right: 8px;
+}
+button:hover {background-color:hsl(157, 44%, 22%) ;}
+
+@media only screen and (min-width:641px) and (max-width: 768px) {
+    .card{max-width: 600px;}
+}
+
+@media only screen and (max-width:641px) {
+    .card {
+        min-width: auto;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        border-radius: 10px;
+    }
+    .left{
+        background-image: url(./images/image-product-mobile.jpg);
+        width: 100%;
+        height: 350px;
+        border-radius: 10px 10px 0 0;
+    
+    }
+    .right{
+        width: 100%;
+        row-gap: 12px;
+        padding: 25px;
+        border-radius: 0 0 10px 10px;
+    }
+    
+}
